@@ -1,104 +1,98 @@
-# BlogForge AI 🤖📝
+# BlogForge AI
 
 ## Overview
 
-BlogForge AI is an innovative Multi Agent Streamlit-based application that leverages AI to create high-quality, professional HR-related blog posts with ease. This tool empowers HR professionals and content creators to generate engaging, insightful blog content quickly and efficiently.
+BlogForge AI is a multi-agent, AI-powered application built with Streamlit that automates the generation of professional, SEO-optimized HR blog posts. It enables HR professionals and content creators to produce high-quality content efficiently using modular AI agents.
 
-## 🌟 Features
+## 🚀 Features
 
-### AI-Powered Content Generation
-- Generate professional HR blog posts instantly
-- Customizable writing styles
-- Flexible content length control
+- 🤖 Multi-agent architecture: Research, Planning, Content Generation, SEO, and Review agents
+- ✍️ AI-generated, long-form HR blog content
+- 🎯 Customizable writing styles and word count
+- 🔍 SEO keyword optimization
+- 🧠 Built using Mistral AI and LangChain
 
-### Key Capabilities
-- Multiple writing tone options
-- Word count customization
-- User-friendly interface
-- Easy blog content creation
+## 📁 Project Structure
 
-## 🚀 Getting Started
+├── agents/ # AI agents for specific tasks
+│ ├── research_agent.py
+│ ├── planning_agent.py
+│ ├── content_agent.py
+│ ├── seo_agent.py
+│ └── review_agent.py
+├── core/ # Core orchestration logic
+│ └── blog_generator.py
+├── frontend/ # Streamlit UI components
+│ ├── pages/
+│ │ ├── home.py
+│ │ └── generate.py
+│ └── components/
+│ └── sidebar.py
+├── utils/ # LLM config and prompt templates
+├── samples/ # Generated blog post examples
+├── app.py # Streamlit entry point
+├── requirements.txt # Python dependencies
+└── README.md
 
-### Prerequisites
+bash
+Copy
+Edit
+
+## ⚙️ Installation
+
+**Prerequisites:**  
 - Python 3.8+
-- pip (Python Package Manager)
+- pip
 
-### Installation
+**Steps:**
 
-1. Clone the repository
 ```bash
 git clone https://github.com/yourusername/hr-blog-generator.git
 cd hr-blog-generator
-```
 
-2. Create a virtual environment
-```bash
 python -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-```
+source venv/bin/activate  # For Windows: venv\Scripts\activate
 
-3. Install dependencies
-```bash
 pip install -r requirements.txt
-```
-
-## 🔧 Project Structure
-```
-├── agents/                 # AI agents for different tasks
-│   ├── research_agent.py
-│   ├── planning_agent.py
-│   ├── content_agent.py
-│   ├── seo_agent.py
-│   └── review_agent.py
-├── utils/                  # Utility functions
-│   ├── llm_config.py
-│   └── prompts.py
-├── core/                   # Core logic
-│   └── blog_generator.py
-├── frontend/              # Streamlit UI components
-│   ├── pages/
-│   │   ├── home.py
-│   │   └── generate.py
-│   │  
-│   └── components/
-│       └── sidebar.py
-├── samples/                # Blog Samples that were created by BlogForge AI 
-|   ├── blog_post.md 
-|   └── blog_post(1).md
-├── app.py                 # Main file
-├── requirements.txt       # Project dependencies
-└── README.md             # Project documentation
-
-
-## 🖥️ Running the Application
-
-```bash
+▶️ Running the App
+bash
+Copy
+Edit
 streamlit run app.py
-```
+🛠 Customization
+Writing Style: Professional | Casual | Technical
 
-## 🛠️ Customization
+Content Length: 500–3000 words adjustable via UI
 
-### Writing Styles
-- Professional
-- Casual
-- Technical
+📦 Dependencies
+Streamlit
 
-### Content Length
-- Adjustable from 500 to 3000 words
+LangChain
 
-## 📦 Dependencies
-- Streamlit
-- LangChain
-- Mistral AI
+Mistral AI
 
-## 🤝 Contributing
+DuckDuckGo Search
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+dotenv
 
-## 📝 License
+🤝 Contributing
+Fork this repo
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Create your feature branch (git checkout -b feature/YourFeature)
+
+Commit your changes (git commit -m 'Add feature')
+
+Push to the branch (git push origin feature/YourFeature)
+
+Open a Pull Request
+
+📝 License
+This project is licensed under the MIT License. See LICENSE for details.
+
+yaml
+Copy
+Edit
+
+---
+
+Let me know if you want this exported as a file or published to GitHub with tweaks.
